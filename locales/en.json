@@ -1,4 +1,21 @@
 {
-  "Search": "Search",
-  "404: Not Found": "404: Not Found"
+	"Search": "Search",
+	"404: Not Found": "404: Not Found",
+	"500: Internal Server Error": "500: Internal Server Error",
+	"Something went wrong on the server. The error has been logged.": "Something went wrong on the server. The error has been logged.",
+	"Oops, you have encountered an error": "Oops, you have encountered an error",
+	"Search for something": "Search for something",
+	"or": "or",
+	"Go back to the Dashboard": "Go back to the Dashboard",
+	"If you are the owner of this application and are regularly seeing this error, please read more about it in our": "If you are the owner of this application and are regularly seeing this error, please read more about it in our",
+	"knowledgebase": "knowledgebase",
+	"If you have any questions, please contact our": "If you have any questions, please contact our",
+	"Technical Support department": "Technical Support department",
+	"Sign out": "Sign out",
+	"Dashboard": "Dashboard",
+	"current page": "current page",
+	"Pages": "Pages",
+	"Products": "Products",
+	"Users": "Users",
+	"The page you are looking for does not exist. This service is either temporarily unable to process your request or the link you clicked is broken. Please check back shortly.": "The page you are looking for does not exist. This service is either temporarily unable to process your request or the link you clicked is broken. Please check back shortly."
 }
