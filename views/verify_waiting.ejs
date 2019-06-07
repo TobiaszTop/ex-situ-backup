@@ -1,0 +1,12 @@
+<% include ./partials/frontform_head %>
+<div class="card form-signin" style="width: 18rem;">
+	<div class="card-img-top">
+		<span data-feather="mail" class="big-icon"></span>
+	</div>
+	<div class="card-body">
+		<p>Din konto er registreret, men du mangler at verificere din email-adresse.</p>
+		<p>En email er blevet sendt til <%= email %> med et aktiverings-link.</p>
+		<a href="/signin" class="btn btn-primary">Send mig et nyt link</a>
+	</div>
+</div>
+<% include ./partials/frontform_footer %>

@@ -1,0 +1,42 @@
+{
+  "name": "kodebase",
+  "version": "0.3.0",
+  "description": "basal express kodebase med mysql og moduler",
+  "main": "index.js",
+  "scripts": {
+    "start": "node -r dotenv/config server.js dotenv_config_path=./.env",
+    "dev": "nodemon -r dotenv/config server.js dotenv_config_path=./.env",
+    "debug": "nodemon --inspect=5858 -r dotenv/config server.js dotenv_config_path=./.env",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BrianEmilius/kodebase.git"
+  },
+  "author": "Brian Emilius <brian@brianemilius.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BrianEmilius/kodebase/issues"
+  },
+  "homepage": "https://github.com/BrianEmilius/kodebase#readme",
+  "dependencies": {
+    "@sendgrid/mail": "^6.3.1",
+    "bcrypt": "^3.0.2",
+    "cookie-parser": "^1.4.4",
+    "dotenv": "^6.1.0",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "express-flash": "0.0.2",
+    "express-formidable": "^1.2.0",
+    "express-log-errors": "^2.0.1",
+    "express-session": "^1.15.6",
+    "i18n": "^0.8.3",
+    "jsonwebtoken": "^8.4.0",
+    "morgan": "^1.9.1",
+    "mysql": "^2.16.0"
+  },
+  "devDependencies": {
+    "jest": "^24.1.0",
+    "nodemon": "^1.18.6"
+  }
+}

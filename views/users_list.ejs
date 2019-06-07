@@ -1,0 +1,48 @@
+<% include ./partials/header %>
+<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+	<h1 class="h2">Brugere</h1>
+	<div class="btn-toolbar">
+		<button class="btn btn-primary"><span data-feather="plus"></span> Opret ny bruger</button>
+	</div>
+</div>
+<table class="table table-striped table-sm table-hover">
+	<thead>
+		<tr>
+			<th style="width:70px"></th>
+			<th>Navn</th>
+			<th>Email</th>
+		</tr>
+	</thead>
+	<tbody>
+	<% users.forEach(user => { %>
+		<tr>
+			<td>
+				<a href="/users/<%= user.id %>"><span data-feather="edit"></span></a>
+				<a href="/users/<%= user.id %>" class="delete"><span data-feather="trash-2"></span></a>
+			</td>
+			<td>Navn</td>
+			<td><%= user.email %></td>
+		</tr>
+	<% }); %>
+	</tbody>
+</table>
+
+<script>
+const deleteLinks = document.querySelectorAll('.delete');
+deleteLinks.forEach(link => {
+	link.addEventListener('click', e => {
+		e.preventDefault();
+		console.log(link.href);
+		const template = document.querySelector('#confirmDialog');
+		const dialog = template.content.cloneNode(true);
+		const heading = document.createTextNode('Slet bruger');
+		const body = document.createTextNode('Er du sikker på du vil slette ${user}?');
+		dialog.querySelector('h5').appendChild(heading);
+		dialog.querySelector('p').appendChild(body);
+		document.body.appendChild(dialog);
+	});
+});
+</script>
+
+<% include ./partials/template_dialog %>
+<% include ./partials/footer %>

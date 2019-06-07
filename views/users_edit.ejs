@@ -1,0 +1,20 @@
+<% include ./partials/header %>
+
+<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+	<h1 class="h2">Rediger: <%= user.email %></h1>
+</div>
+<form>
+	<div class="form-group">
+		<label for="inputEmail">Email</label>
+		<input type="email" class="form-control" name="email" id="inputEmail" value="<%= user.email %>">
+	</div>
+</form>
+<% if (roles.length) { %>
+<h2>Roller</h2>
+<ul>
+	<li><% roles.forEach(role => { %>
+		<%= role.name %>
+	<% }); %></li>
+</ul>
+<% } %>
+<% include ./partials/footer %>

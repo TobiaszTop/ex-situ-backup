@@ -1,0 +1,21 @@
+{
+  "Search": "Søg",
+  "404: Not Found": "404: Findes ikke",
+  "The page you are looking for does not exist. This service is either temporarily unable to process your request or the link you clicked is broken. Please check back shortly.": "Siden du leder efter findes ikke. Denne service er midlertidigt ude af stand til at gennemføre din efterspørgsel, eller du har klikket på et ugyldigt link. Prøv igen om et øjeblik.",
+  "Oops, you have encountered an error": "Ups, der er sket en fejl",
+  "Search for something": "Søg efter noget",
+  "Go back to the Dashboard": "Gå tilbage til kontrolpanelet",
+  "or": "eller",
+  "If you are the owner of this application and are regularly seeing this error, please read more about it in our": "Hvis du er ejeren af denne hjemmeside og du ofte ser denne fejlbesked kan du læse mere om emnet i vores",
+  "knowledgebase": "vidensdatabase",
+  "If you have any questions, please contact our": "Hvis du har nogle spørgsmål kan du kontakte vores",
+  "Technical Support department": "tekniske supportafdeling",
+  "Sign out": "Log ud",
+  "Dashboard": "Kontrolpanel",
+  "current page": "aktive side",
+  "Pages": "Sider",
+  "500: Internal Server Error": "500: Internal Server Error",
+  "Something went wrong on the server. The error has been logged.": "Something went wrong on the server. The error has been logged.",
+  "Products": "Produkter",
+  "Users": "Brugere"
+}
