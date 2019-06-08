@@ -3,8 +3,15 @@ h1, h2{
   padding:0;
   color:#ffffff;
 }
+ul{
+  list-style:none;
+  display:flex;
+  flex-direction:row;
+}
+ul li{
+  margin:10px;
+}
 body{
   background-color :#99dddd;
   font-family: sans-serif;
-  display: flex
 }
