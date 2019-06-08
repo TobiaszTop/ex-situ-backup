@@ -1,7 +1,5 @@
-const authorized = require("../middleware/authorize");
-
 module.exports = function(app) {
-  app.get("/", authorized, (req, res, next) => {
+  app.get("/", (req, res, next) => {
     res.render("frontpage", {}); //normally dashboard
   });
 };
