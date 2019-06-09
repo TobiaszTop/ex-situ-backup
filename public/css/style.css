@@ -4,20 +4,32 @@
   box-sizing:border-box;
 }
 body{
-  font-family: sans-serif;
-}
-div#wrapper{
-  max-width:1280px;
-  background-color:#fff;
-  margin:0 auto;
+  font-family: 'Crete Round', serif;
+  color:#42280B;
 }
 img{
   width:100%;
   height:auto;
 }
+.wrapper{
+  max-width:1280px;
+  margin:0 auto;
+}
+section{
+  min-height:350px;
+}
+#frontpage section:first-of-type{
+  min-height:0;
+}
+article{
+  padding:2%;
+  column-width:25em;
+}
 
 /*--------------------------------------*/
-
+main{
+  min-height:600px;
+}
 main#frontpage{
   color:#000
 }
@@ -29,6 +41,20 @@ main#examples{
 }
 main#challenges{
   color:#aa0;
+}
+section:nth-child(even){
+  background-color:#fff;
+}
+section:nth-child(odd){
+  background-color:#D8C6B3;
+}
+footer{
+  /*background-image: linear-gradient(#fff, #42280B);*/
+  background-color:#42280B;
+  color:#fff;
+  min-height:50px;
+  text-align:right;
+  padding:20px;
 }
 
 /*--------------------------------------*/
@@ -50,6 +76,7 @@ a{
   text-decoration:none;
   color:#ff0000;
   font-size:1.2em;;
+  font-family:sans-serif;
 }
 a:hover{
   color:#ffaaaa;
@@ -58,19 +85,26 @@ h1{
   margin-top:1em;;
   margin-left:0.5%;
   font-size:3em;
+  /*position:absolute;
+  color:#fff;*/
 }
 h2{
   font-size:2em;
   margin-left:0.5%;
   margin-top:1em;
 }
+p{
+  font-size:1.2em;
+  margin:1%;
+}
 
 /*--------------------------------------*/
 
 div.image{
   text-align:center;
+  /*position:relative;*/
 }
-section.opening{
+.opening{
   column-count:2;
 }
 .opening p{
