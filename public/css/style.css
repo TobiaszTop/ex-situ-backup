@@ -6,10 +6,12 @@
 body{
   font-family: 'Crete Round', serif;
   color:#42280B;
+  background: radial-gradient(#fff, #fafffa);
 }
 img{
   width:100%;
   height:auto;
+  vertical-align:bottom;
 }
 .wrapper{
   max-width:1280px;
@@ -23,35 +25,33 @@ section{
 }
 article{
   padding:2%;
-  column-width:25em;
+  display:flex;
+  align-items:center;
+  justify-content:space-around;
 }
 
 /*--------------------------------------*/
 main{
   min-height:600px;
+  margin-bottom:5%;
 }
-main#frontpage{
-  color:#000
-}
-main#approach{
-  color:#faf;
-}
-main#examples{
-  color:#aff;
-}
-main#challenges{
-  color:#aa0;
+
+main#frontpage{color:#000}
+main#approach{color:#faf;}
+main#examples{color:#aff;}
+main#challenges{color:#aa0;}
+
+section:nth-child(odd){
+  /*background-color:#fff;*/
 }
 section:nth-child(even){
-  background-color:#fff;
-}
-section:nth-child(odd){
   background-color:#D8C6B3;
 }
 footer{
   /*background-image: linear-gradient(#fff, #42280B);*/
-  background-color:#A1E8AF;
-  color:#fff;
+  /*background-color:#A1E8AF;*/
+  border:1px solid #A1E8AF;
+  color:#A1E8AF;
   min-height:50px;
   text-align:right;
   padding:20px;
@@ -59,17 +59,17 @@ footer{
 
 /*--------------------------------------*/
 
-nav{
+nav.top{
   padding:10px 0;
 }
-nav ul{
+nav.top ul{
   border:solid 1px #A1E8AF;
   list-style:none;
   display:flex;
   flex-direction:row;
   padding:10px 0;
 }
-nav ul li{
+nav.top ul li{
   margin:0 15px;
 }
 a{
@@ -98,7 +98,7 @@ p{
   margin:1%;
 }
 .current{
-  color:#aaa
+  color:#aaa;
 }
 
 /*--------------------------------------*/
@@ -112,6 +112,12 @@ div.image{
 }
 .opening p{
   padding:2.5%;
+}
+div.graph{
+  width:35%;
+}
+div.text{
+  width:45%;
 }
 
 /*--------------------------------------*/
