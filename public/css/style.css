@@ -174,7 +174,7 @@ section.tri{
 /*--------------------------------------*/
 
 @media only screen and (max-width: 500px) {
-  nav ul, article{
+  nav.top ul, article{
     flex-direction:column;
     align-items:center;
   }
@@ -182,7 +182,13 @@ section.tri{
     width:90%;
     justify-content:center;
   }
-  nav.top{
-    display:none;
+  h1{
+    font-size:1.5em;
+  }
+  h2{
+    font-size:1.2em;
+  }
+  p, button{
+    font-size:1em;
   }
 }
