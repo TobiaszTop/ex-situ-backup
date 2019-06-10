@@ -18,34 +18,46 @@ img{
   margin:0 auto;
 }
 section{
-  min-height:350px;
-}
-#frontpage section:first-of-type{
-  min-height:0;
+  /*min-height:350px;*/
 }
 article{
   padding:2%;
   display:flex;
-  align-items:center;
+  align-items:top;
   justify-content:space-around;
+}
+.hide{
+  display:none;
 }
 
 /*--------------------------------------*/
 main{
-  min-height:600px;
+  min-height:300px;
   margin-bottom:5%;
 }
-
-main#frontpage{color:#000}
-main#approach{color:#faf;}
-main#examples{color:#aff;}
-main#challenges{color:#aa0;}
 
 section:nth-child(odd){
   /*background-color:#fff;*/
 }
 section:nth-child(even){
   background-color:#D8C6B3;
+}
+div.ex{
+  display:none;
+}
+div.ex.show{
+  display:block;
+}
+div.ex section:nth-child(odd).expanda{
+  background-color:#73b387;
+  color:#fff;
+}
+div.ex section:nth-child(odd).exbison{
+  background-color:#8a7271;
+  color:#fff;
+}
+div.ex section:nth-child(odd).excondor{
+  background-color:#fff8dc;
 }
 footer{
   /*background-image: linear-gradient(#fff, #42280B);*/
@@ -54,7 +66,7 @@ footer{
   color:#A1E8AF;
   min-height:50px;
   text-align:right;
-  padding:20px;
+  padding:0 20px;
 }
 
 /*--------------------------------------*/
@@ -82,20 +94,24 @@ a:hover{
   color:#A1E8AF;
 }
 h1{
-  margin-top:1em;;
-  margin-left:0.5%;
+  padding-top:1em;
+  padding-left:0.5%;
   font-size:3em;
   /*position:absolute;
   color:#fff;*/
 }
 h2{
   font-size:2em;
-  margin-left:0.5%;
-  margin-top:1em;
+  text-align:center;
+  padding-top:1em;
+}
+h3{
+  text-align:center;
+  font-size:1.5em;
 }
 p{
   font-size:1.2em;
-  margin:1%;
+  margin:3%;
 }
 .current{
   color:#aaa;
@@ -119,12 +135,60 @@ div.graph{
 div.text{
   width:45%;
 }
+article.graph{
+  border-bottom:5px #A1E8AF dotted;
+}
+button:nth-of-type(1){
+  background-image:url('../images/buttons/panda.jpg')
+}
+button:nth-of-type(2){
+  background-image:url('../images/buttons/bison.jpg')
+}
+button:nth-of-type(3){
+  background-image:url('../images/buttons/condor.jpg')
+}
+button{
+  width:20%;
+  padding:2% 0;
+  background-size: cover;
+  font-size:1.8em;
+  color:#fff;
+  opacity:0.5;
+  cursor:pointer;
+  font-family: 'Fugaz One', cursive;
+}
+button.show{
+  opacity:1;
+}
+button:hover{
+  opacity:1;
+}
+nav.tri{
+  display:flex;
+  justify-content:center;
+}
+section.tri{
+  padding:3% 0;
+}
 
 /*--------------------------------------*/
 
 @media only screen and (max-width: 500px) {
-  nav ul, article{
+  nav.top ul, article{
     flex-direction:column;
-    /*align-items:center;*/
+    align-items:center;
+  }
+  div.text, div.graph{
+    width:90%;
+    justify-content:center;
+  }
+  h1{
+    font-size:1.5em;
+  }
+  h2{
+    font-size:1.2em;
+  }
+  p, button{
+    font-size:1em;
   }
 }
