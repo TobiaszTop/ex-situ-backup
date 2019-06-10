@@ -1,5 +1,5 @@
 module.exports = function(app) {
   app.get("/approach", (req, res, next) => {
-    res.render("approach", {});
+    res.render("approach", { title:"The Ex-situ Approach" });
   });
 };
