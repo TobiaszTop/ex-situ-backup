@@ -171,7 +171,7 @@ div.photo{
 div.full{
   width:90%;
 }
-article.graph{
+article.graph, main#challenges article{
   border-bottom:5px #A1E8AF dotted;
 }
 article.mid{
