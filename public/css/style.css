@@ -93,9 +93,11 @@ footer{
   /*background-color:#A1E8AF;*/
   border:1px solid #A1E8AF;
   color:#A1E8AF;
-  min-height:50px;
   text-align:right;
   padding:0 20px;
+}
+footer p{
+  margin:1%;
 }
 
 /*--------------------------------------*/
@@ -170,6 +172,7 @@ div.photo{
 }
 div.full{
   width:90%;
+  text-align:center;
 }
 article.graph, main#challenges article{
   border-bottom:5px #A1E8AF dotted;
