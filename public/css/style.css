@@ -6,6 +6,9 @@ html {
   padding:0;
   box-sizing:border-box;
 }
+a{
+  color:#000;
+}
 body{
   font-family: 'Crete Round', serif;
   color:#42280B;
@@ -41,6 +44,17 @@ span.bold{
 span.italic{
   font-style: italic;
 }
+span.indent{
+  margin-left:3%;
+}
+figure img{
+  border:1px #fff solid;
+}
+figcaption{
+  font-family: 'Roboto Slab', serif;
+  margin:1px;
+  text-align:right;
+}
 
 /*--------------------------------------*/
 main{
@@ -60,6 +74,9 @@ div.ex{
 div.ex.show{
   display:block;
 }
+section.expanda, section.exbison, section.excondor{
+  background-color:#fff;
+}
 div.ex section:nth-child(odd).expanda{
   background-color:#73b387;
   color:#fff;
@@ -76,9 +93,11 @@ footer{
   /*background-color:#A1E8AF;*/
   border:1px solid #A1E8AF;
   color:#A1E8AF;
-  min-height:50px;
   text-align:right;
   padding:0 20px;
+}
+footer p{
+  margin:1%;
 }
 
 /*--------------------------------------*/
@@ -96,7 +115,7 @@ nav.top ul{
 nav.top ul li{
   margin:0 15px;
 }
-a{
+nav a{
   text-decoration:none;
   color:#555;
   font-size:1.2em;;
@@ -124,6 +143,7 @@ h3{
 p{
   font-size:1.2em;
   margin:3%;
+  line-height:1.55em;
 }
 .current{
   color:#aaa;
@@ -150,8 +170,15 @@ div.text{
 div.photo{
   width:45%;
 }
-article.graph{
+div.full{
+  width:90%;
+  text-align:center;
+}
+article.graph, main#challenges article{
   border-bottom:5px #A1E8AF dotted;
+}
+article.mid{
+  align-items:center;
 }
 button{
   width:30%;
@@ -197,7 +224,7 @@ section.tri{
     flex-direction:column;
     align-items:center;
   }
-  div.text, div.graph{
+  div.text, div.graph, div.photo{
     width:90%;
     justify-content:center;
   }
@@ -212,5 +239,8 @@ section.tri{
   }
   #examples button{
     padding:5% 0;
+  }
+  figcaption{
+    font-size:0.8em;
   }
 }
