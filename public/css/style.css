@@ -219,6 +219,43 @@ section.tri{
 
 /*--------------------------------------*/
 
+@media only screen and (max-width: 768px) {
+  article{
+    flex-direction:column;
+    align-items:center;
+  }
+  article.graph{
+    flex-direction:row;
+    align-items: flex-start;
+  }
+  div.text{
+    width:90%;
+    justify-content:center;
+  }
+  div.photo{
+    width:85%;
+  }
+  h1{
+    font-size:2em;
+  }
+  h2{
+    font-size:1.6em;
+  }
+  h3{
+    font-size:1.3em;
+  }
+  p{
+    font-size:1.2em;
+  }
+  figcaption{
+    font-size:1em;
+  }
+  footer p{
+    font-size:0.9em;
+  }
+}
+
+
 @media only screen and (max-width: 500px) {
   nav.top ul, article{
     flex-direction:column;
@@ -242,5 +279,8 @@ section.tri{
   }
   figcaption{
     font-size:0.8em;
+  }
+  footer p{
+    font-size:0.7em;
   }
 }
