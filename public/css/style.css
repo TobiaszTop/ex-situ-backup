@@ -282,4 +282,7 @@ section.tri{
   footer p{
     font-size:0.7em;
   }
+  nav.top ul li{
+    padding:12px 0;
+  }
 }
