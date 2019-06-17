@@ -6,7 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<meta name="description" content="<%= site.description %>">
 	<title><%= title %> - <%= site.title %></title>
-	<link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+	<!--<link href="/assets/css/bootstrap.min.css" rel="stylesheet">-->
 	<style>
 		body{
 			margin: 0;
@@ -21,8 +21,8 @@
 			border: 1px solid #cccccc;
 			margin: 72px auto 0;
 			border-radius: 4px;
-			background: #fff url(/assets/media/block.gif) no-repeat 0 51px;
-			padding: 70px 40px 1em 186px;
+			background: #fff /*url(/assets/media/block.gif) no-repeat 0 51px*/;
+			padding: 70px 40px 1em 70px;
 		}
 		#block_error h2{
 			color: #218bdc;
@@ -43,18 +43,7 @@
 	<div id="block_error" class="col-sm-12 col-md-10 col-lg-8 col-xl-6">
 		<h2><%= title %>. <%= __("Oops, you have encountered an error") %></h2>
 		<p><%= content %></p>
-		<form>
-			<div class="form-group">
-				<label for="form_search"><%= __("Search for something") %></label>
-				<input type="search" name="keywords" class="form-control" id="form_search">
-			</div>
-			<button type="submit" class="btn btn-primary"><span data-feather="search"></span> <%= __("Search") %></button> <span class="wide_word"><%= __("or") %></span> <a href="/" class="btn btn-secondary"><%= __("Go back to the Dashboard") %></a>
-		</form>
-		<hr>
-		<p>
-		<%= __("If you are the owner of this application and are regularly seeing this error, please read more about it in our") %> <a href="#!"><%= __("knowledgebase") %></a>.
-		<%= __("If you have any questions, please contact our") %> <a href="#!"><%= __("Technical Support department") %></a>.
-		</p>
+		<a href="/">Take me back</a>
 	</div>
 	<!-- Icons -->
 	<script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
