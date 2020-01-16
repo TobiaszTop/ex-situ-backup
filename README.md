@@ -18,5 +18,4 @@ app.listen(port, () => {
 ```
 
 ## Maintainers
-* Brian
-* Torben
+* Tobiasz
